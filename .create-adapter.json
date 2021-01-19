@@ -1,0 +1,38 @@
+{
+	"cli": true,
+	"adapterName": "realsomfy",
+	"title": "realSomfy",
+	"description": "Adapter conntects to somfy open api to control somfy devices ie. tahoma.",
+	"keywords": [
+		"somfy",
+		"shutters",
+		"drive"
+	],
+	"expert": "yes",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [],
+	"type": "iot-systems",
+	"startMode": "daemon",
+	"connectionType": "cloud",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"language": "TypeScript",
+	"adminReact": "no",
+	"tools": [
+		"ESLint"
+	],
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "yes",
+	"authorName": "Matthias Schmoldt",
+	"authorGithub": "Real-TTX",
+	"authorEmail": "schmoldt@me.com",
+	"gitRemoteProtocol": "HTTPS",
+	"gitCommit": "yes",
+	"license": "MIT License",
+	"ci": "gh-actions",
+	"dependabot": "yes",
+	"creatorVersion": "1.31.0"
+}

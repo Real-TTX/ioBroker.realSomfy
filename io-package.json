@@ -1,0 +1,100 @@
+{
+	"common": {
+		"name": "realsomfy",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "realSomfy",
+		"titleLang": {
+			"en": "realSomfy",
+			"de": "realSomfy",
+			"ru": "realSomfy",
+			"pt": "realSomfy",
+			"nl": "realSomfy",
+			"fr": "realSomfy",
+			"it": "realSomfy",
+			"es": "realSomfy",
+			"pl": "realSomfy",
+			"zh-cn": "realSomfy"
+		},
+		"desc": {
+			"en": "Adapter conntects to somfy open api to control somfy devices ie. tahoma.",
+			"de": "Der Adapter ist mit einer offenen API verbunden, um einige Geräte zu steuern, z. ",
+			"ru": "Адаптер подключается к somfy open api для управления некоторыми устройствами, т.е. ",
+			"pt": "O adaptador se conecta a somfy open api para controlar alguns dispositivos, ou seja. ",
+			"nl": "Adapter wordt aangesloten op Somfy Open API om Somfy-apparaten te bedienen, dwz. ",
+			"fr": "L'adaptateur se connecte à somfy open api pour contrôler les périphériques somfy ie. ",
+			"it": "L'adattatore si collega a somfy open api per controllare dispositivi somfy es. ",
+			"es": "El adaptador se conecta a la API abierta de somfy para controlar dispositivos somfy, es decir. ",
+			"pl": "Adapter łączy się z somfy otwartym interfejsem API w celu sterowania urządzeniami Somfy, tj. ",
+			"zh-cn": "适配器连接到尚飞开放api来控制尚飞设备，即。"
+		},
+		"authors": [
+			"Matthias Schmoldt <schmoldt@me.com>"
+		],
+		"keywords": [
+			"somfy",
+			"shutters",
+			"drive"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "realsomfy.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/Real-TTX/ioBroker.realsomfy/master/admin/realsomfy.png",
+		"readme": "https://github.com/Real-TTX/ioBroker.realsomfy/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "iot-systems",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
